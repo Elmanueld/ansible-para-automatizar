@@ -1,4 +1,6 @@
-# Laboratorio Ansible con cinco servidores Ubuntu en Docker
+# ansible-para-automatizar
+
+## Laboratorio Ansible con cinco servidores Ubuntu en Docker
 
 La práctica crea cinco contenedores Ubuntu con SSH, el usuario `ansible` (clave `ansible`) y permisos sudo sin contraseña. Ansible se ejecuta desde WSL y administra los contenedores por los puertos publicados en `localhost`.
 
