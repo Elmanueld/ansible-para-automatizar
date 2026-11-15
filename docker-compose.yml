@@ -1,0 +1,44 @@
+services:
+  servidor1:
+    build: .
+    container_name: ansible-servidor1
+    ports:
+      - "2221:22"
+    networks: [laboratorio]
+    restart: unless-stopped
+
+  servidor2:
+    build: .
+    container_name: ansible-servidor2
+    ports:
+      - "2222:22"
+    networks: [laboratorio]
+    restart: unless-stopped
+
+  servidor3:
+    build: .
+    container_name: ansible-servidor3
+    ports:
+      - "2223:22"
+    networks: [laboratorio]
+    restart: unless-stopped
+
+  servidor4:
+    build: .
+    container_name: ansible-servidor4
+    ports:
+      - "2224:22"
+    networks: [laboratorio]
+    restart: unless-stopped
+
+  servidor5:
+    build: .
+    container_name: ansible-servidor5
+    ports:
+      - "2225:22"
+    networks: [laboratorio]
+    restart: unless-stopped
+
+networks:
+  laboratorio:
+    name: ansible-laboratorio
